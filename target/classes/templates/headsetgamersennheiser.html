@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmls:th=”http://www.thymeleaf.org”>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type="text/css" href="../css/estilos.css">
+    <link rel=stylesheet type="text/css" href="../css/imgProd.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <title>Headset Gamer Sennheiser</title>
+</head>
+
+<!--CORPO DA PÁGINA-->
+<body class="background">
+    <!--BARRA DE MENU-->
+    <header class="w-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand esq" href="#"><img src="/img/Banner_Logo_Info.png" width="60" height="60" alt="Banner da Loja"></a>
+                <div>
+                    <a class="navbar-brand esq" href="#"><img src="/img/icone_carrinho_compras.png" width="20" height="30" alt="Carrinho de Compras"></a>
+                    <a class="navbar-brand" href="#"><img src="/img/icone_contato.png" width="20" height="30" alt="Atendimento ao Cliente"></a>
+                    <a class="navbar-brand" href="mailto:" target="_blank"><img src="/img/icone_email.png" width="20" height="30" alt="Atendimento ao Cliente"></a>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active dropdown" aria-current="page">
+                            <a class="nav-link" th:href="@{/}" id="navbar" role="button" aria-haspopup="true" aria-expanded="false">Página Principal</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Monitores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Notebooks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Mouses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Teclados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Som</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Headsets/Fones</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/login}">Admin </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar por Tipo">
+                    <button id="buscar" class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!--CORPO DA LISTAGEM-->
+    <main>
+        <section><br>
+
+            <div class="container prod">
+                <br>
+                <h4>Headset Gamer One Epos Sennheiser, para PC, Mac e PS4, Preto - Modelo 1000236</h4>
+                <div class="row">
+                    <div class="col"><br>
+
+                        <!--COLUNA COM THUMBNAILS DO PRODUTO-->
+                        <div class="imgProd">
+                            <a href="#" onclick="open('/imgProd/2001_headset/2001_headset_01.jpg','','status=no,Width=1000,Height=1000');">
+                                <img src="/imgProd/2001_headset/2001_headset_Thumb01.jpg"  alt="Headset Gamer One Sennheiser">
+                            </a>
+                        </div><br>
+
+                        <div class="imgProd">
+                            <a href="#" onclick="open('/imgProd/2001_headset/2001_headset_02.jpg','','status=no,Width=1000,Height=1000');">
+                                <img src="/imgProd/2001_headset/2001_headset_Thumb02.jpg"  alt="Headset Gamer One Sennheiser">
+                            </a>
+                        </div><br>
+
+                        <div class="imgProd">
+                            <a href="#" onclick="open('/imgProd/2001_headset/2001_headset_03.jpg','','status=no,Width=1000,Height=1000');">
+                                <img src="/imgProd/2001_headset/2001_headset_Thumb03.jpg"  alt="Headset Gamer One Sennheiser">
+                            </a>
+                        </div><br>
+
+                        <div class="imgProd">
+                            <a href="#" onclick="open('/imgProd/2001_headset/2001_headset_04.jpg','','status=no,Width=1000,Height=1000');">
+                                <img src="/imgProd/2001_headset/2001_headset_Thumb04.jpg"  alt="Headset Gamer One Sennheiser">
+                            </a>
+                        </div><br>
+
+                        <div class="imgProd">
+                            <a href="#" onclick="open('/imgProd/2001_headset/2001_headset_05.jpg','','status=no,Width=1000,Height=1000');">
+                                <img src="/imgProd/2001_headset/2001_headset_Thumb05.jpg"  alt="Headset Gamer One Sennheiser">
+                            </a>
+                        </div><br><br>
+                    </div>
+
+                    <!--COLUNA CENTRAL-->
+                    
+                    <div class="col-md-6 align-items-start esq" >
+                        <img src="/imgProd/2001_headset/2001_headset.jpg"  alt="Headset Gamer One Sennheiser">
+                    </div><br>
+                    
+
+                    <!--COLUNA COM INFO PARA COMPRA DO PRODUTO-->
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <label class="badge badge-warning text-center">Dinheiro, PIX ou no Cartão de Crédito</label>
+                            <div class="card-header">
+                                <h2>R$ 1.376,99 à vista</h2>
+                                <h5>ou em 10X de R$ 140,00</h5>
+                                <h7>Total a prazo R$ 1400,00</h7>
+                            </div>
+                            <label class="badge badge-success text-center">FRETE GRÁTIS - Jaraguá do Sul e região</label>
+                            <ul class="list-group list-group-flush">
+                                <form class="my-2 my-lg-0 centro">
+                                    <div class="centro">
+                                        <p><br>Calcular o Frete
+                                            <input class="form-control mr-sm" type="text" placeholder="Digite o CEP 00000000">
+                                            <button class="btn btn-outline-success my-2 my-sm-0" type="button">Calcular</button>
+                                        </p>
+                                        <div id="inputAddress"></div>
+                                    </div>
+                                </form>
+                                <li class="list-group-item">
+                                    <input id="number" type="number" placeholder="Qtde" min="1" max="10">
+                                    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>                                   
+                                </li>
+                                <li class="centro">
+                                    <a href="#" class="btn btn-success">COMPRAR</a>
+                                    <a th:href="@{/}" class="btn btn-danger">COMPRAR MAIS</a>
+                                </li>
+
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container prod">
+                <div>
+                    <h4>DESCRIÇÃO DO PRODUTO</h4>
+                    <h2>Headset Gamer One Epos Sennheiser, para PC, Mac e PS4</h2>
+                    <p>O headset acústico aberto para jogos Game One apresenta áudio espacial extremamente preciso, mas natural. A tecnologia proprietária oferece um realismo de áudio excepcional. 
+                    </p> 
+                    <p> Leve, robusto e luxuosamente equipado, se o seu jogo é áudio realista de alto desempenho e conforto, o Game One tem o seu nome. O fone de ouvido definitivo para entusiastas de jogos, os famosos fones de ouvido Game One com design acústico aberto é a referência definitiva para nossos clientes, apreciada por seus desempenho e conforto de áudio premium. 
+                    </p>
+                    <p>Os fones de ouvido abrem na parte de trás do Game One e a tecnologia transdutor oferece realismo impressionante e som de alta fidelidade Sem compromisso. Um microfone com modo silencioso é facilmente ajustado para um melhor posicionamento da captação de voz e minimiza o ruído de fundo para clareza acústica e comunicação cristalino. 
+                    </p>
+                    <p>O design ao redor da orelha do Game One com almofadas de ouvido XXL em veludo de pelúcia e uma faixa de cabeça acolchoada proporciona conforto máximo para longas sessões de jogo. Mecânica robusta e o design moderno garantem durabilidade a longo prazo. Todos simplesmente o melhor dos fones de ouvido clássicos para jogos.
+                    </p>
+                </div>
+                <a href="#" onclick="open('/imgProd/2001_headset/2001_headset_descric.jpg','','status=no,Width=1000,Height=1000');">
+                    <img src="/imgProd/2001_headset/2001_headset_descric.jpg"  alt="Detalhes do Headset Gamer One da Sennheiser">
+                </a>
+                <br><br>
+            </div>
+
+        </section>
+    </main><br>
+    
+    <!--RODAPÉ/FOOTER-->
+    <footer>
+        <div class="row jumbotron jumbotron-fluid bg-dark p-4 mb-0">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 cizgi">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-black text-center">
+                        <p>
+                            <a href="https://goo.gl/maps/u95uYpew1iiQS29TA" target="_blank">
+                                <img class="img-mapa" src="/img/icone-mapa50x50.png">
+                            </a>
+                        </p>
+                        <p class="d-inline lead">Jaraguá do Sul - SC ©2022<br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 cizgi">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <p class="d-inline lead"><img class="footerlogo" src="/img/Footer_Logo_Info.png"></p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center img-fluid">
+                        <p class="d-inline lead">Siga nossas redes sociais<br></p>
+                        <p class="d-inline lead"><br></p>
+                        <a href="#"><img class="img-redes-sociais" src="/img/facebook.png"></a>
+                        <a href="#"><img class="img-redes-sociais" src="/img/twitter.png"></a>
+						<a href="#"><img class="img-redes-sociais" src="/img/instagram.png"></a>
+                        <p class="d-inline lead"></p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT / JQUERY / POPPER do BOOTSTRAP -->
+    <script src="/js/cep.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-
+    ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js" integrity="sha384-
+    ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

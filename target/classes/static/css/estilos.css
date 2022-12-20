@@ -1,0 +1,63 @@
+
+body{
+    background: linear-gradient(180deg, rgba(1,79,110,1) 0%, rgba(94,94,94,1) 100%) fixed;
+}
+
+tbody{
+    background:aliceblue;
+}
+
+
+/* CARDs da Página Principal */
+.cardBoot {
+    width: 20rem;
+    margin: 2rem;
+}
+  
+.image-grid-container {
+    display: grid;
+
+    /* For 2 columns */
+    grid-template-columns: auto auto;
+}
+
+img {
+    width: 100%;
+}
+
+.img-redes-sociais{
+    flex-basis: 10%;
+    width: 10%;
+}
+
+.footerlogo{
+    flex-basis: 65%;
+    width: 65%;
+}
+
+.img-mapa{
+    flex-basis: 14%;
+    width: 14%;
+}
+
+.prod{
+    background-color: #ffffff;
+}
+
+/*alinhamentos frete*/
+.centro{
+    display: flex;
+    justify-content: center;
+}
+
+#number{
+    width: 4em;
+}
+      
+.esq{
+    display: flex;
+    align-content: flex-start;
+    flex-flow: column wrap;
+    align-items: left;
+    justify-content: left;
+}
