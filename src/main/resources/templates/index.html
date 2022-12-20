@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html xmls:th=”http://www.thymeleaf.org”>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type="text/css" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <title>Página Principal</title>
+</head>
+
+<!--CORPO DA PÁGINA-->
+<body class="background">
+    <!--BARRA PRINCIPAL COM O LOGOTIPO E ÍCONES DO CARRINHO, CONTATO E EMAIL-->
+    <header class="w-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand esq" href="#"><img src="/img/Banner_Logo_Info.png" width="60" height="60" alt="Banner da Loja"></a>
+                <div>
+                    <a class="navbar-brand esq" href="#"><img src="/img/icone_carrinho_compras.png" width="20" height="30" alt="Carrinho de Compras"></a>
+                    <a class="navbar-brand" href="#"><img src="/img/icone_contato.png" width="20" height="30" alt="Atendimento ao Cliente"></a>
+                    <a class="navbar-brand" href="mailto:" target="_blank"><img src="/img/icone_email.png" width="20" height="30" alt="Atendimento ao Cliente"></a>
+                </div>
+            </div>
+        </nav>
+        <!--BARRA DE NAVEGAÇÃO e MENU-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active dropdown" aria-current="page">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Página Principal</a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-light bg-dark" href="#">Monitores</a>
+                                <a class="dropdown-item text-light bg-dark" href="#">Notebooks</a>
+                                <a class="dropdown-item text-light bg-dark" href="#">Mouses</a>
+                                <a class="dropdown-item text-light bg-dark" href="#">Teclados</a>
+                                <a class="dropdown-item text-light bg-dark" href="#">Som</a>
+                                <a class="dropdown-item text-light bg-dark" href="#">Headsets/Fones</a>
+                              </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Monitores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Notebooks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Mouses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Teclados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Som</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Headsets/Fones</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/login}">Admin</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar por Tipo">
+                    <button id="buscar" class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!--CORPO DA LISTAGEM-->
+    <main>
+        <section class="container"><br>
+
+            <!--CARROSSEL PÁGINA PRINCIPAL-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="/img/banner01.jpg" alt="Primeiro Banner">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/img/banner02.jpg" alt="Segundo Banner">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/banner03.jpg" alt="Terceiro Banner">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/banner04.jpg" alt="Quarto Banner">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a><br><br>
+                </div>
+            </div>
+
+            <!--BADGE COM INFORMAÇÃO DAS PROMOÇÕES-->
+            <div class="container">
+                <div class="row">
+                    <label class="badge badge-warning text-center">CONFIRA NOSSAS PROMOÇÕES</label>
+                </div>
+            </div>
+            
+            <!--GRID COM CARDS DO BOOTSTRAP BLOCO 1-->
+            <div class="container">
+                <div class="row">
+                    <!--CARD NR 1 BLOCO 1-->
+                    <div class="col-sm">
+                        <div class="card">
+                            <div>
+                                <a href="#" onclick="open('../imgProd/1001_monitor/1001_Monitor-Gamer-UltrawideGd.jpg','','status=no,Width=1000,Height=1000');">
+                                    <img class="card-img-top" src="../imgProd/1001_monitor/1001_Monitor-Gamer-Ultrawide.jpg" alt="Monitor Gamer">
+                                </a>
+                            </div>
+                                <h5 class="card-title text-center"><strong>MONITOR LG LCD 25.7"</strong></h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Monitor Gamer LCD UltraWide LG 26WQ500-B 25,7” - Full HD 75Hz HDMI FreeSync</li>
+                                <li class="list-group-item">R$ 836,91 ou em 5X de R$ 170,00</li>
+                            </ul>
+                            <div class="card-body">
+                                <a th:href="@{/monitorgamerlg}" class="btn btn-primary card-link">Ver mais</a><br><br>
+                                <label class="badge badge-warning text-center">Dinheiro, PIX ou no Cartão de Crédito</label>
+                                <label class="badge badge-success text-center">FRETE GRÁTIS - Jaraguá do Sul e região</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD NR 2 BLOCO 1-->
+                    <div class="col-sm">
+                        <div class="card">
+                            <div>
+                                <a href="#" onclick="open('/imgProd/2001_headset/2001_headset_01.jpg','','status=no,Width=1000,Height=1000');">
+                                    <img class="card-img-top" src="/imgProd/2001_headset/2001_headset.jpg" alt="Headset Gamer Sennheiser">
+                                </a>
+                            </div>
+                                <h5 class="card-title text-center"><strong>HEADSET GAMER SENNHEISER</strong></h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Headset Gamer One Epos Sennheiser, para PC, Mac e PS4, Preto - Modelo 1000236</li>
+                                <li class="list-group-item">R$ 1376,99 ou em 10x de R$ 140,00</li>
+                            </ul>
+                            <div class="card-body">
+                                <a th:href="@{/headsetgamersennheiser}" class="btn btn-primary card-link">Ver mais</a><br><br>
+                                <label class="badge badge-warning text-center">Dinheiro, PIX ou no Cartão de Crédito</label>
+                                <label class="badge badge-success text-center">FRETE GRÁTIS - Jaraguá do Sul e região</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD NR 3 BLOCO 1-->
+                    <div class="col-sm">
+                        <div class="card">
+                            <div>
+                                <a href="#" onclick="open('/imgProd/3001_notebook/3001_notebook-Gamer.jpg','','status=no,Width=1000,Height=1000');">
+                                    <img class="card-img-top" src="/imgProd/3001_notebook/3001_notebook-Gamer.jpg" alt="Notebook Gamer Acer">
+                                </a>
+                            </div>
+                                <h5 class="card-title text-center"><strong>NOTEBOOK GAMER ACER</strong></h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Notebook Gamer Acer Nitro 5 Intel Core i7-10750H, GeForce GTX 1650, 8GB RAM, SSD 512GB, 15.6' Full HD, Win11</li>
+                                <li class="list-group-item">R$ 4.299,99 ou em 10x de R$ 450,00</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary card-link">Ver mais</a><br><br>
+                                <label class="badge badge-warning text-center">Dinheiro, PIX ou no Cartão de Crédito</label>
+                                <label class="badge badge-success text-center">FRETE GRÁTIS - Jaraguá do Sul e região</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                    
+            <hr>
+
+            <!--GRID COM CARDS DO BOOTSTRAP BLOCO 2-->
+            <div class="container">
+                <div class="row">
+                    <!--CARD NR 1 BLOCO 2-->
+                    <div class="col-sm">
+                        <div class="card">
+                            <div>
+                                <a href="#" onclick="open('/imgProd/4001_mouse/4001_Mouse-Gamer.jpg','','status=no,Width=1000,Height=1000');">
+                                    <img class="card-img-top" src="/imgProd/4001_mouse/4001_Mouse-Gamer.jpg" alt="Mouse Gamer">
+                                </a>
+                            </div>
+                                <h5 class="card-title text-center"><strong>MOUSE GAMER LOGITECH</strong></h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Mouse Gamer Logitech G203 LIGHTSYNC RGB, Preto, Efeito de Ondas de Cores, 6 Botões Programáveis e 8.000 DPI</li>
+                                <li class="list-group-item">R$ 147,90 ou em 8X de R$ 20,00</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary card-link">Ver mais</a><br><br>
+                                <label class="badge badge-warning text-center">Dinheiro, PIX ou no Cartão de Crédito</label>
+                                <label class="badge badge-success text-center">FRETE GRÁTIS - Jaraguá do Sul e região</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD NR 2 BLOCO 2-->
+                    <div class="col-sm">
+                        <div class="card">
+                            <div>
+                                <a href="#" onclick="open('/imgProd/5001_cx_som/5001_caixa-som-jbl.jpg','','status=no,Width=1000,Height=1000');">
+                                    <img class="card-img-top" src="/imgProd/5001_cx_som/5001_caixa-som-jbl.jpg" alt="Caixa de Som JBL">
+                                </a>
+                            </div>
+                                <h5 class="card-title text-center"><strong>CAIXA DE SOM JBL</strong></h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Caixa de Som JBL, Flip Essential, 16W RMS, Bluetooth, Resistente à Água, Preto - Modelo 28913255</li>
+                                <li class="list-group-item">R$ 499,99 ou em 10x de R$ 55,00</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary card-link">Ver mais</a><br><br>
+                                <label class="badge badge-warning text-center">Dinheiro, PIX ou no Cartão de Crédito</label>
+                                <label class="badge badge-success text-center">FRETE GRÁTIS - Jaraguá do Sul e região</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD NR 3 BLOCO 2-->
+                    <div class="col-sm">
+                        <div class="card">
+                            <div>
+                                <a href="#" onclick="open('/imgProd/6001_teclado/6001_Teclado-Gamer.jpg','','status=no,Width=1000,Height=1000');">
+                                    <img class="card-img-top" src="/imgProd/6001_teclado/6001_Teclado-Gamer.jpg" alt="Teclado Gamer">
+                                </a>
+                            </div>
+                                <h5 class="card-title text-center"><strong>TECLADO GAMER ELG</strong></h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Teclado Gamer ELG Hybrid Mechanical Pulse Fire, Preto, Teclas Iluminadas,  USB - Modelo TGHMPF</li>
+                                <li class="list-group-item">R$ 119,99 ou em 3x de R$ 40,00</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary card-link">Ver mais</a><br><br>
+                                <label class="badge badge-warning text-center">Dinheiro, PIX ou no Cartão de Crédito</label>
+                                <label class="badge badge-success text-center">FRETE GRÁTIS - Jaraguá do Sul e região</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section><br>
+    </main>
+    
+    <!--RODAPÉ/FOOTER-->
+    <footer>
+        <div class="row jumbotron jumbotron-fluid bg-dark p-4 mb-0">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 cizgi">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-black text-center">
+                        <p>
+                            <a href="https://goo.gl/maps/u95uYpew1iiQS29TA" target="_blank">
+                                <img class="img-mapa" src="/img/icone-mapa50x50.png">
+                            </a>
+                        </p>
+                        <p class="d-inline lead">Jaraguá do Sul - SC ©2022<br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 cizgi">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <p class="d-inline lead"><img class="footerlogo" src="/img/Footer_Logo_Info.png"></p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center img-fluid">
+                        <p class="d-inline lead">Siga nossas redes sociais<br></p>
+                        <p class="d-inline lead"><br></p>
+                        <a href="#"><img class="img-redes-sociais" src="/img/facebook.png"></a>
+                        <a href="#"><img class="img-redes-sociais" src="/img/twitter.png"></a>
+						<a href="#"><img class="img-redes-sociais" src="/img/instagram.png"></a>
+                        <p class="d-inline lead"></p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT / JQUERY / POPPER do BOOTSTRAP -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-
+    ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js" integrity="sha384-
+    ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

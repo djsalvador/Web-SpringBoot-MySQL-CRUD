@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmls:th=”http://www.thymeleaf.org”>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type="text/css" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <title>Cadastro de Produtos</title>
+</head>
+
+<!--CORPO DA PÁGINA-->
+<body class="background">
+    <!--BARRA DE MENU-->
+    <header class="w-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">CADASTRO DE PRODUTOS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bstarget="#
+                navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+                navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/}">Página Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/admin}">Admin</a>
+                        </li>
+                        <li class="nav-item active" aria-current="page">
+                            <a class="nav-link" th:href="@{/produtos/cadastro}">Cadastro de Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Edição de Produtos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!--CORPO DA LISTAGEM-->
+    <main>
+        <section class="container"><br>
+            <div class="row marcador align-items-center">
+                <div class="col mx-auto text-center">
+                    <div class="container content" >
+
+                        <!--FORMULÁRIO DE CADASTRO-->
+                        <div class="row align-items-center">
+                            <form th:action="@{/produtos}" th:object="${produto}" class="formulario" method="POST">
+                                <div class="form-row">
+                                    <div class="form-group-4 col-md-4">
+                                        <label for="codigo" class="badge badge-info">Código do Produto</label>
+                                        <input type="number" class="form-control is-valid" id="codigo" name="codigo" placeholder="Código" required="required" th:field="*{codigo}" />
+                                    </div>
+                                    <div class="form-group-4 col-md-4">
+                                        <label for="nomeProd" class="badge badge-info">Tipo de Produto</label>
+                                        <input type="text" class="form-control" id="nomeProd" name="nomeProd" placeholder="Tipo" required="required" th:field="*{nomeProd}" />
+                                    </div>
+                                    <div class="form-group-4 col-md-4">
+                                        <label for="marcaProd" class="badge badge-info">Marca do Produto</label>
+                                        <input type="text" class="form-control" id="marcaProd" name="marcaProd" placeholder="Marca" required="required" th:field="*{marcaProd}" />
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-row">
+                                    <div class="form-group-4 col-md-8">
+                                        <label for="descricaoProd" class="badge badge-info">Descrição do Produto</label>
+                                        <input type="text" class="form-control" id="descricaoProd" name="descricaoProd" placeholder="Descrição" required="required" th:field="*{descricaoProd}" />
+                                    </div>
+                                    <div class="form-group-4 col-md-4">
+                                        <label for="valorProd" class="badge badge-info">Valor Unitário</label>
+                                        <input type="text" class="form-control" id="valorProd" name="valorProd" placeholder="R$" required="required" onkeypress="$(this).mask('###0.00', {reverse: true})" th:field="*{valorProd}"/>
+                                    </div>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+    </main>
+    
+    <!--RODAPÉ-->
+    <footer>
+        <div class="row jumbotron jumbotron-fluid bg-dark p-4 mb-0">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 cizgi">
+                <div class="card bg-light border-0"></div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 cizgi">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <p class="d-inline lead"><img class="footerlogo" src="/img/Footer_Logo_Info.png"></p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="card bg-light border-0"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT / JQUERY / POPPER do BOOTSTRAP -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</body>
+</html>
