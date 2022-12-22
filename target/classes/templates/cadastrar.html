@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=stylesheet type="text/css" href="../css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Cadastro de Produtos</title>
 </head>
 
@@ -19,12 +18,13 @@
     <header class="w-100">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
             <div class="container">
-                <a class="navbar-brand" href="#">CADASTRO DE PRODUTOS</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bstarget="#
-                navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
-                navigation"><span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand" href="#">CADASTRO DE PRODUTOS
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" th:href="@{/}">Página Principal</a>
@@ -97,8 +97,10 @@
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 cizgi">
                 <div class="card bg-light border-0">
-                    <div class="card-body text-center">
-                        <p class="d-inline lead"><img class="footerlogo" src="/img/Footer_Logo_Info.png"></p><br>
+                    <div class="card-body text-center img-fluid">
+                        <p>
+                            <a href="#"><img class="imgfooter" src="/img/Footer_Logo_Info.png"></a>
+                        </p>
                     </div>
                 </div>
             </div>

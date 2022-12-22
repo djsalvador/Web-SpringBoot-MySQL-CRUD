@@ -25,19 +25,9 @@ img {
     width: 100%;
 }
 
-.img-redes-sociais{
-    flex-basis: 10%;
-    width: 10%;
-}
-
-.footerlogo{
-    flex-basis: 65%;
-    width: 65%;
-}
-
-.img-mapa{
-    flex-basis: 14%;
-    width: 14%;
+.imgfooter{
+    flex-basis: 55%;
+    width: 55%;
 }
 
 .prod{
